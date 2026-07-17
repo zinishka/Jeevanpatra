@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply bg-govt-blue text-white px-6 py-3 rounded-lg hover:bg-govt-navy transition-colors font-semibold;
+}
+
+.btn-secondary {
+  @apply bg-grey-200 text-govt-blue px-6 py-3 rounded-lg hover:bg-grey-300 transition-colors font-semibold border border-govt-blue;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-govt-navy mb-4;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-govt-blue to-govt-green bg-clip-text text-transparent;
+}
